@@ -19,3 +19,12 @@ function stray(numbers) {
    return num[0]
  }
 }
+
+////////////////////
+//////   OR   //////
+////////////////////
+
+function stray(numbers) {
+  const num = numbers.sort((a,b) => a - b)
+  return num[0] === num[1] ? num[num.length - 1] : num[0]
+}
