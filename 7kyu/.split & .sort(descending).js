@@ -20,3 +20,13 @@ function descendingOrder(n){
   str = str.sort((a, b) => b - a).join("");
   return Number(str);
 }
+
+//////////////
+///// OR /////
+//////////////
+
+
+function descendingOrder(n){
+  //...
+  return Number(String(n).split('').sort((a,b) => b - a).join(''))
+  }
