@@ -22,3 +22,19 @@ function solution(number){
   return arr.reduce((acc,val) => acc + val, 0)
   
 }
+
+
+////////////////
+/////  OR  /////
+////////////////
+
+
+function solution(number){
+  let arr = []
+  for (let i = 1; i < number; i++) {
+    if (i % 5 === 0 || i % 3 === 0) {
+      arr.push(i)
+    }
+    }
+    return arr.reduce((a, b) => a + b, 0)
+}
