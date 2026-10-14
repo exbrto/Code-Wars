@@ -11,8 +11,8 @@
 
 function order(words){
   return words.split(' ').sort((a, b) => {
-    const hi = a.match(/\d/);
-    const bye = b.match(/\d/);
-    return hi - bye
+    const hi = a.match(/\d/);           // Find any digits in the words, store them in a varibales 
+    const bye = b.match(/\d/);          // and sort those varibales so the words with digits are sorted
+    return hi - bye                     // numerically
   }).join(' ')
 }
