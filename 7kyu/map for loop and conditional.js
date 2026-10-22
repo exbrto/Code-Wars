@@ -48,3 +48,31 @@ function openOrSenior(data){
   }
   return arr
 }
+
+
+//////////////////
+/////   OR   /////
+//////////////////
+
+
+function openOrSenior(data){
+//   const age = data.map(age => age[0])
+//   const handi = data.map(handi => handi[1])
+//   let arr = []
+  
+//   if (age >= 55 && handi > 7) {
+//     arr.push('Senior')
+//   } else {
+//     arr.push('Open')
+//   }
+//   return arr
+  let arr = []
+  data.map(([a,b]) => {
+    if (a >= 55 && b > 7){
+      arr.push('Senior')
+    } else {
+      arr.push('Open')
+    }
+  })
+  return arr
+}
