@@ -30,3 +30,21 @@ function openOrSenior(data){
 function openOrSenior(data){
     return data.map(([a,b]) => (a >= 55 && b > 7) ? 'Senior' : 'Open')
 }
+
+
+//////////////////
+/////   OR   /////
+//////////////////
+
+
+function openOrSenior(data){
+  let arr = []
+  for (let [a,b] of data) {
+    if (a >= 55 && b > 7) {
+      arr.push('Senior')
+    } else {
+      arr.push('Open')
+    }
+  }
+  return arr
+}
