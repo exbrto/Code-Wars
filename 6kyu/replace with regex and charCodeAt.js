@@ -3,7 +3,7 @@
 
 // If anything in the text isn't a letter, ignore it and don't return it.
 
-// "a" = 1, "b" = 2, etc.
+// "a" = 1, "b" = 2, "c" = 3 , etc.
 
 // Input = "The sunset sets at twelve o' clock."
 // Output = "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"
